@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Bridge.SignalR</id>
+    <title>Bridge.NET SignalR</title>
+    <version>0.0.0</version>
+    <authors>Andreas Gladik</authors>
+    <owners />
+    <licenseUrl>https://github.com/glaanc03/Bridge.SignalR/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/glaanc03/Bridge.SignalR</projectUrl>
+    <iconUrl>http://speed.bridge.net/identity/bridgedotnet-100x100.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SignalR C#-wrapper for Bridge.NET projects</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>C# bridge bridge.net signalr</tags>
+    <dependencies>
+      <dependency id="Bridge.Min" version="1.14.0" />
+      <dependency id="Bridge.Html5" version="1.14.0" />
+      <dependency id="Bridge.jQuery" version="2.9.0" />
+    </dependencies>
+    <frameworkAssemblies>
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="..\..\Bridge.SignalR\bin\Release\Bridge.SignalR.dll" target="lib\net40\Bridge.SignalR.dll"/>
+    <file src="..\..\Bridge.SignalR\bin\Release\Bridge.SignalR.xml" target="lib\net40\Bridge.SignalR.xml"/>
+    <file src="..\..\Bridge.SignalR\bin\Release\Bridge.SignalR.pdb" target="lib\net40\pdb\Bridge.SignalR.pdb"/>
+  </files>
+</package>

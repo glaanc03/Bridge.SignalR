@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Bridge.SignalR")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+//[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Bridge.SignalR")]
-[assembly: AssemblyCopyright("Copyright 2016")]
+//[assembly: AssemblyCopyright("Copyright 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -30,6 +30,6 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("1.14")]
-[assembly: AssemblyFileVersion("1.14.0")]
-[assembly: AssemblyInformationalVersion("1.14.0")]
+//[assembly: AssemblyVersion("1.14")]
+//[assembly: AssemblyFileVersion("1.14.0")]
+//[assembly: AssemblyInformationalVersion("1.14.0")]

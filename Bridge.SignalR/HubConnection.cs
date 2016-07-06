@@ -3,17 +3,38 @@ using Bridge.jQuery2;
 
 namespace Bridge.SignalR
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [External]
     public class HubConnection
     {
 
         private extern HubConnection();
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Logging;
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Guid Id;
+
+        /// <summary>
+        /// 
+        /// </summary>
         public string MessageId;
+
+        /// <summary>
+        /// 
+        /// </summary>
         public readonly ConnectionState State;
 
+        /// <summary>
+        /// 
+        /// </summary>
         [Name("qs")]
         public dynamic QueryString;
 

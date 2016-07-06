@@ -3,17 +3,34 @@ using Bridge.jQuery2;
 
 namespace Bridge.SignalR
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [External]
     public class HubProxy
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public object State;
+
+        /// <summary>
+        /// 
+        /// </summary>
         public HubConnection Connection;
+
+        /// <summary>
+        /// 
+        /// </summary>
         public string HubName;
 
         private extern HubProxy();
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public extern bool HasSubscriptions();
-
 
         /// <summary>Wires up a callback to be invoked when a invocation request is received from the server hub.</summary>
         /// <param name="eventName" type="String">The name of the hub event to register the callback for.</param>
@@ -27,6 +44,7 @@ namespace Bridge.SignalR
 
         /// <summary>Invokes a server hub method with the given arguments.</summary>
         /// <param name="methodName" type="String">The name of the server hub method.</param>
+        /// <param name="parameters"></param>
         public extern Deferred Invoke(string methodName, params object[] parameters);
 
     }
