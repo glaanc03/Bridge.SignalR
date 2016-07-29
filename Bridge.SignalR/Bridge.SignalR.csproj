@@ -26,6 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoStdLib>true</NoStdLib>
+    <CodeAnalysisRuleSet>Bridge.SignalR.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -47,6 +48,7 @@
     <Compile Include="ConnectionState.cs" />
     <Compile Include="HubConnection.cs" />
     <Compile Include="HubProxy.cs" />
+    <Compile Include="HubSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignalR.cs" />
     <Compile Include="StateChange.cs" />
@@ -56,20 +58,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Bridge, Version=1.14.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bridge.Core.1.14.0\lib\net40\Bridge.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Bridge.Html5, Version=1.14.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bridge.Html5.1.14.0\lib\net40\Bridge.Html5.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Bridge.jQuery2, Version=2.9.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bridge.jQuery.2.9.1\lib\net40\Bridge.jQuery2.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Bridge.SignalR.ruleset" />
     <None Include="Bridge\bridge.json" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -88,6 +83,7 @@
   <!-- NuGet packaging starts -->
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <NuGetBuildPackage>true</NuGetBuildPackage>
+    <CodeAnalysisRuleSet>Bridge.SignalR.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <NuGetPackageSourcePath Include="$(SolutionDir).build\specs\Bridge.SignalR.nuspec">
@@ -102,10 +98,6 @@
     </Reference>
     <Reference Include="Bridge.Html5, Version=1.14.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bridge.Html5.1.14.0\lib\net40\Bridge.Html5.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Bridge.jQuery, Version=2.9.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bridge.jQuery.2.9.1\lib\net40\Bridge.jQuery.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

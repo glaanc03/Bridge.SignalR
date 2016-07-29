@@ -26,7 +26,7 @@ namespace Bridge.SignalR
         public extern bool Jsonp { get; set; }
                     
         /// <summary>
-        /// 
+        /// allowed transport types.
         /// </summary>
         public extern TransportType[] Transport { get; set; }
 

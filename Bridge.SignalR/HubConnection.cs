@@ -13,7 +13,7 @@ namespace Bridge.SignalR
         private extern HubConnection();
 
         /// <summary>
-        /// 
+        /// client-side logging.
         /// </summary>
         public bool Logging;
 
@@ -33,7 +33,7 @@ namespace Bridge.SignalR
         public readonly ConnectionState State;
 
         /// <summary>
-        /// 
+        /// data send to the server when the client connects.
         /// </summary>
         [Name("qs")]
         public dynamic QueryString;
@@ -54,7 +54,6 @@ namespace Bridge.SignalR
         ///     If specified it must contain a protocol and a host property.
         /// </param>
         public extern bool IsCrossDomain(string url, object against = null);
-
 
         /// <summary>Starts the connection</summary>
         public extern Deferred Start();
