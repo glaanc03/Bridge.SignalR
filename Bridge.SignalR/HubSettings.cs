@@ -1,7 +1,7 @@
 ﻿namespace Bridge.SignalR
 {
     /// <summary>
-    /// 
+    /// SignalR HubSettings.
     /// </summary>
     [External]
     [ObjectLiteral]
@@ -9,7 +9,7 @@
     public class HubSettings
     {
         /// <summary>
-        /// client-side logging.
+        /// client-side logging. (default: false)
         /// </summary>
         public bool Logging;
 
@@ -17,10 +17,10 @@
         /// data send to the server when the client connects.
         /// </summary>
         [Name("qs")]
-        public dynamic QueryString;
+        public object QueryString;
 
         /// <summary>
-        /// 
+        /// use default Path for the SignalR hub. (default: true)
         /// </summary>
         public bool UseDefaultPath;
     }

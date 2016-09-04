@@ -4,32 +4,32 @@ using Bridge.jQuery2;
 namespace Bridge.SignalR
 {
     /// <summary>
-    /// 
+    /// A client side proxy for a server side hub.
     /// </summary>
     [External]
     public class HubProxy
     {
         /// <summary>
-        /// 
+        /// State of the Connection
         /// </summary>
         public object State;
 
         /// <summary>
-        /// 
+        /// HubConnection used by the HubProxy
         /// </summary>
         public HubConnection Connection;
 
         /// <summary>
-        /// 
+        /// Name of the Hub
         /// </summary>
         public string HubName;
 
         private extern HubProxy();
 
         /// <summary>
-        /// 
+        /// Checks for registered event on the Hub. 
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Returns true if there is any registered event on the Hub.</returns>
         public extern bool HasSubscriptions();
 
         /// <summary>Wires up a callback to be invoked when a invocation request is received from the server hub.</summary>

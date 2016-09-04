@@ -13,4 +13,4 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyVersion("2.0")]
 [assembly: AssemblyFileVersion("2.0.1")]
-[assembly: AssemblyInformationalVersion("2.0.1-beta")]
+[assembly: AssemblyInformationalVersion("2.0.1")]

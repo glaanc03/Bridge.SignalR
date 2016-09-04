@@ -4,7 +4,7 @@ using Bridge.jQuery2;
 namespace Bridge.SignalR
 {
     /// <summary>
-    /// 
+    /// A Connection for interacting with Hubs.
     /// </summary>
     [External]
     public class HubConnection
@@ -18,17 +18,17 @@ namespace Bridge.SignalR
         public bool Logging;
 
         /// <summary>
-        /// 
+        /// The connection id for the connection.
         /// </summary>
         public Guid Id;
 
         /// <summary>
-        /// 
+        /// The last message id for the connection.
         /// </summary>
         public string MessageId;
 
         /// <summary>
-        /// 
+        /// The current ConnectionState of the connection.
         /// </summary>
         public readonly ConnectionState State;
 
