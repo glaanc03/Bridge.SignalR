@@ -12,11 +12,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>SignalR C#-wrapper for Bridge.NET projects</description>
     <releaseNotes></releaseNotes>
-    <copyright>Copyright 2016</copyright>
+    <copyright>Copyright 2017</copyright>
     <tags>C# bridge bridge.net signalr</tags>
     <dependencies>
-      <dependency id="Bridge.Min" version="1.14.0" />
-      <dependency id="Bridge.Html5" version="1.14.0" />
+      <dependency id="Bridge.Min" version="16.0.0-beta" />
+      <dependency id="Bridge.Html5" version="16.0.0-beta" />
       <dependency id="Bridge.jQuery" version="2.9.0" />
     </dependencies>
     <frameworkAssemblies>
