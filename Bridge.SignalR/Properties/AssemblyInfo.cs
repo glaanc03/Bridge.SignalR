@@ -14,6 +14,6 @@ using Bridge;
 
 [assembly: AssemblyVersion("2.0")]
 [assembly: AssemblyFileVersion("2.0.2")]
-[assembly: AssemblyInformationalVersion("2.0.2-beta")]
+[assembly: AssemblyInformationalVersion("2.0.2")]
 
 [assembly: Convention(Target = ConventionTarget.Member, Notation = Notation.LowerCamelCase)]
